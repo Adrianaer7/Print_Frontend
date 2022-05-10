@@ -1,7 +1,7 @@
 import Layout from "../components/Layout"
 
 const Libros = ({libros}) => {
-
+  console.log(libros)
     
 
   return (
@@ -14,13 +14,13 @@ const Libros = ({libros}) => {
 export default Libros
 
 
-export async function getServerSideProps() {
-    const url = `${process.env.API_URL}/libros`
-    const respuesta = await fetch(url)
-    const libros = await respuesta.json()
-    return {
-      props: {
-        libros
-      }
+export async function getStaticProps() {
+  const url = `${process.env.API_URL}/libros`
+  const respuesta = await fetch(url)
+  const libros = await respuesta.json()
+  return {
+    props: {
+      libros
     }
   }
+}

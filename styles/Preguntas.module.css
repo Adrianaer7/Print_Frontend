@@ -1,0 +1,27 @@
+.preguntas {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(206, 188, 188);
+    border-radius: 2rem;
+    padding: 2rem;
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.preguntas div {
+    font-size: 2rem;
+    background-color: white;
+}
+
+.boton {
+    text-align: left;
+    background-color: white;
+    border-bottom: 1px solid rgb(209, 193, 193);
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton:active {
+    background-color: rgb(230, 215, 215);
+}
